@@ -1,0 +1,166 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav,
+main,
+aside {
+  width: 15%;
+  float: left;
+}
+
+nav>ul img {
+  width: 80px;
+  height: 40px;
+  margin-top: 35px;
+}
+
+nav>ul h2 {
+  color: rgb(246, 166, 35);
+}
+
+.login {
+  color: rgb(119, 119, 119);
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav>ul li {
+  padding-top: 20px;
+  list-style: none;
+}
+
+nav>ul li a {
+  color: rgb(119, 119, 119);
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+nav>ul li a:hover {
+  color: rgb(0, 165, 98);
+}
+
+main {
+  width: 55%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  padding-right: 2%;
+}
+
+main>span {
+  color: rgb(246, 166, 35);
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+main>h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
+main>p {
+  font-size: 2.5rem;
+}
+
+aside {
+  width: 30%;
+  float: left;
+}
+
+aside li {
+  list-style: none;
+  border-bottom: 1px solid rgb(195, 195, 195);
+}
+
+aside p {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.bottom {
+  border-top: 1px solid rgb(195, 195, 195);
+  ;
+  width: 85%;
+  float: right;
+}
+
+.bottom>h3 {
+  font-size: 2.5rem;
+}
+
+.bottom>h4 {
+  width: 33.3333%;
+  margin-right: 75px;
+  float: left;
+}
+
+.bottom>h4 p {
+  padding-right: 90px;
+  font-size: 3rem;
+}
+
+.bottom>section {
+  width: 33.3333%;
+  margin-right: 75px;
+  float: left;
+}
+
+.bottom>section p {
+  padding-top: 15px;
+  padding-right: 50px;
+  color: rgb(145, 145, 145);
+  font-size: 2.25rem;
+}
+
+.bottom>img {
+  height: 250px;
+  width: auto;
+  float: left;
+}
+
+.author {
+  color: rgb(51, 51, 51);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.author:hover {
+  color: rgb(0, 165, 98);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
